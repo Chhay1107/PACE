@@ -1,0 +1,69 @@
+{
+  "name": "pace",
+  "version": "0.1.0",
+  "packageManager": "npm@11.17.0",
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
+  "targets": {
+    "default": {
+      "context": "browser"
+    }
+  },
+  "description": "",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "test:e2e": "playwright test",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "private": true,
+  "overrides": {
+    "@atlaskit/analytics-next-stable-react-context": {
+      "react": "^18.2.0"
+    }
+  },
+  "dependencies": {
+    "@atlaskit/button": "^25.1.0",
+    "@atlaskit/css-reset": "^8.2.0",
+    "@atlaskit/heading": "^7.0.1",
+    "@atlaskit/primitives": "^22.3.0",
+    "@atlaskit/tokens": "^16.7.0",
+    "dexie": "^4.4.5",
+    "dexie-react-hooks": "^4.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router": "^7.18.2",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@atlaskit/eslint-plugin-design-system": "^16.10.1",
+    "@compiled/parcel-config": "^0.5.7",
+    "@playwright/test": "^1.62.1",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/babel__traverse": "^7.28.0",
+    "@types/node": "^22.12.0",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "jsdom": "^30.0.1",
+    "parcel": "^2.16.4",
+    "typescript": "5.5.4",
+    "vitest": "^4.1.11"
+  }
+}
